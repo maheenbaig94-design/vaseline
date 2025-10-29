@@ -1,0 +1,605 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+  font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+}
+.bodies{
+  background:linear-gradient(135deg,#bfe4e8,#d1abab,#b7ccd7,#c1afc5);
+}
+
+
+body {
+  background-color: #4b6a92;
+  color: rgb(239, 229, 229);
+  line-height: 1.6;
+}
+
+header {
+  background:linear-gradient(135deg,#bfe4e8,#d1abab,#b7ccd7,#c1afc5);
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgb(19, 18, 18);
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: #0a0a0a;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #e185e7;
+}
+
+.banner {
+  background-image: url(./images/vaseline2.avif);
+  color: white;
+  text-align: left;
+  padding: 80px 20px;
+  
+  
+       background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 100vh;
+   width: 100%;
+}
+
+.banner h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  background-color: #ff5722;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 1.1em;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #e64a19;
+}
+.purpose{
+  margin-bottom: 30px;
+  text-align: center;
+  
+
+}
+.product-card{
+  margin-bottom: 50px;
+}
+.purpose h1{
+  margin-top: 40px;
+}
+
+.products {
+  padding: 60px 40px;
+  
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.product-card {
+  
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin: 20px 0 10px;
+  font-size: 1.5em;
+}
+
+.product-card p {
+  font-size: 1.1em;}
+  .footer {
+  background-color: #0d1321;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.cta p {
+  color: #bbb;
+  max-width: 600px;
+  margin: 0 auto 20px;
+}
+
+.cta-buttons button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #fff;
+  color: #0d1321;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#team {
+  padding: 50px 20px;
+  
+}
+
+#team h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.card {
+  margin-bottom: 30px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.card-img-top {
+  border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  color: #00b1b3;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+  color: #bbb;
+}
+
+.footer-section p {
+  color: #bbb;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer-bottom .social-icons span {
+  margin: 0 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.blue {
+  color: #4ea8de;
+}
+/* ----- GLOBAL RESET & BASE ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Poppins', system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial;
+}
+
+/* ----- MAIN BACKGROUND ----- */
+.bodies {
+  background: linear-gradient(135deg, #bfe4e8, #d1abab, #b7ccd7, #c1afc5);
+}
+
+/* ----- GENERAL BODY STYLING ----- */
+body {
+  background-color: #4b6a92;
+  color: rgb(239, 229, 229);
+  line-height: 1.6;
+}
+
+/* ----- HEADER ----- */
+header {
+  background: linear-gradient(135deg, #bfe4e8, #d1abab, #b7ccd7, #c1afc5);
+  padding: 20px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid rgb(19, 18, 18);
+}
+
+header h1 {
+  font-size: 1.5rem;
+  color: #0a0a0a;
+  letter-spacing: 1px;
+  font-style: italic;
+  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+/* ----- NAVIGATION ----- */
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #e185e7;
+}
+
+/* ----- BANNER ----- */
+.banner {
+  background-image: url(./images/vaseline2.avif);
+  color: white;
+  text-align: left;
+  padding: 80px 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.banner h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  background-color: #ff5722;
+  color: white;
+  padding: 15px 25px;
+  text-decoration: none;
+  font-size: 1.1em;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #e64a19;
+}
+
+/* ----- PRODUCT SECTION ----- */
+.purpose {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.product-card {
+  margin-bottom: 50px;
+}
+
+.purpose h1 {
+  margin-top: 40px;
+}
+
+.products {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+/* Grid layout */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.product-card {
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  margin: 20px 0 10px;
+  font-size: 1.5em;
+}
+
+.product-card p {
+  font-size: 1.1em;
+}
+
+/* ----- TEAM SECTION ----- */
+#team {
+  padding: 50px 20px;
+}
+
+#team h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.card {
+  margin-bottom: 30px;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.card-img-top {
+  border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.4rem;
+  color: #00b1b3;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #666;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* ----- FOOTER ----- */
+.footer {
+  background-color: #0d1321;
+  color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+  color: #bbb;
+}
+
+.footer-section p {
+  color: #bbb;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.footer-bottom .social-icons span {
+  margin: 0 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.blue {
+  color: #4ea8de;
+}
+
+/* =========================================================
+   🧠 RESPONSIVE DESIGN
+   ========================================================= */
+
+/* Tablets */
+@media (max-width: 992px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .banner {
+    padding: 60px 20px;
+    height: 80vh;
+  }
+
+  .banner h1 {
+    font-size: 2.5em;
+  }
+
+  .banner p {
+    font-size: 1em;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  .banner {
+    height: 70vh;
+    text-align: center;
+  }
+
+  .banner h1 {
+    font-size: 1.8em;
+  }
+
+  .banner p {
+    font-size: 1em;
+  }
+
+  .cta-button {
+    padding: 10px 18px;
+    font-size: 1em;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .products h2 {
+    font-size: 2em;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+}
